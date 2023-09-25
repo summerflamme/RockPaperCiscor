@@ -57,19 +57,19 @@ public class MainApp {
         return object;
     }
     public static int gameRound(int Playerchoix , int choixIA){
-        int result ;
+        int resultat ;
 
         System.out.println("ton choix est " + playerSelection(Playerchoix) + "Le choix de l'IA est" + playerSelection(choixIA));
         if ( Playerchoix == 0 && choixIA == 2|| Playerchoix == 1 && choixIA == 0 || Playerchoix == 2 && choixIA == 1) {
             System.out.println("Win");
-            result = 1;
+            resultat = 1;
         }else  if (Playerchoix == choixIA){
-            result = 2 ;
+            resultat = 2 ;
             System.out.println("Egual");
         } else {    
             System.out.println("Perdu ");
-            result =3;
+            resultat=3;
         }
-        return result;
+        return resultat;
     }
 }
